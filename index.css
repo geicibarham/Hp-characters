@@ -1,0 +1,87 @@
+body{
+    min-height: 100vh;
+    /* background-color: black; */
+    color:white;
+    background-image: url("./assets/images/harry-potter-42.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 80%;
+   margin:0;
+
+}
+
+nav{
+    background-color: black;
+    width: 100%;
+    top:0;
+
+    display:flex;
+    justify-content: center;
+
+    position: -webkit-sticky;
+    position: sticky;
+    z-index: 9999;
+    overflow: hidden
+    
+}
+
+.title {
+    font-family: 'Harry Potter', sans-serif;
+    font-weight: lighter;
+    font-size: 30px;
+}
+.outer-container{
+    margin-top: 20px;
+    width: 100px;
+    margin: 50px 0 0 50px;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+	grid-template-rows: 2fr 2fr 2fr;
+    column-gap: 20px;
+    row-gap: 20px;
+    align-items: center;
+ 
+}
+
+aside{
+    background-color: black;
+  
+    padding:20px;
+    border-radius: 20px;
+}
+.img__card {
+    width: 250px;
+    height: 300px;
+}
+
+.icon{
+    height:40px;
+   
+
+}
+
+.house{
+    display: flex;
+
+  
+    align-items:center;
+    padding:10px;
+}
+
+p{
+    align-self: flex-start;
+    font-weight: lighter;
+    margin-right:10px;
+   
+}
+
+
+@media only screen and (max-width: 768px) {
+    .outer-container {
+      display: grid;
+      grid-template-columns: 1fr;
+      padding: 1em;
+      grid-row-gap: 50px;
+    }
+  }
